@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celestial</title>
+    <link rel="icon" href="img/910720997873840148.png">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+     <!-- AnimeJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+     <!-- JQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section_1">
+            <div class="naviga">
+                <div class="logo"><a href="index.html">celestial</a></div>
+                <div class="cat-github"><i class="uil uil-elipsis-double-v-alt"></i></div>
+            </div>
+            <div class="cat-gif"></div>
+            <div class="title">
+                <h1 class="glitch" data-text="Artist">Designer</h1>
+                <p>“A picture is a poem without words”</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rotatethis">
+        <h2 id="rotated">creative • design • UX • UI • art •</h2>
+  </div>
+    
+    <div class="social_media">
+        <ul>
+            <li><a href="index.html" class="font-weight-bold">Home</a></li>
+            <li><a href="about.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="fun-icon">
+        <ul>
+            <li><i class="uil uil-circle"></i></li>
+            <li><i class="uil uil-circle"></i></li>
+            <li><i class="uil uil-circle"></i></li>
+        </ul>
+    </div>
+
+    <div class="overplay"></div>
+
+<!-- -------------------script-------------------  -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+<!-- js-code     -->
+<script> 
+    const circleType = new CircleType(document.getElementById('rotated'));   
+
+    TweenMax.from(".logo", 2, {
+    delay: 5.4,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".cat-github", 2, {
+    delay: 5.5,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".rotatethis", 2, {
+    delay: 6,
+    opacity: 0,
+    ease: Expo.easeInOut
+    });
+
+    TweenMax.staggerFrom(".social_media ul li", 2, {
+    delay: 5.7,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+    }, 0.1);
+
+    TweenMax.staggerFrom(".fun-icon ul li", 2, {
+    delay: 5.9,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+    }, 0.1);  
+
+    TweenLite.fromTo(".title h1", 0.3, {
+          x:-6,
+          y:2,
+          opacity: 0,
+    }, 
+    {
+          delay: 5,
+          x: 6,
+          y: -2,
+          opacity: 1,
+          ease:RoughEase.ease.config({
+                strength:8,
+                points:40, 
+                template:Linear.easeNone, 
+                randomize:false}),
+          clearProps:"all"
+    });
+
+    TweenLite.fromTo(".title p", 0.3, {
+          x:-6,
+          y:2,
+          opacity: 0,
+    }, 
+    {
+          delay: 9,
+          x: 6,
+          y: -2,
+          opacity: 1,
+          ease:RoughEase.ease.config({
+                strength:8,
+                points:40, 
+                template:Linear.easeNone, 
+                randomize:false}),
+          clearProps:"all"
+    });
+</script>
+</body>
+</html>

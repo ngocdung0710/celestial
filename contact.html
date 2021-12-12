@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celestial</title>
+    <link rel="icon" href="img/910720997873840148.png">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+     <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+<body id="js-scroll">
+    <div class="container-fluid banner">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand font-weight-bold" href="index.html">celestial</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-light" href="about.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+
+        <div class="contact_container" data-scroll-section>
+            <p class="contact-data" data-scroll>Hi! My name is <span>Jun LEE</span> and I'm a 
+                <span>Designer</span>, born in <span>Binh Duong,</span> VietNam.</p>
+
+            <p data-scroll>If you have any questions or would like to have a chat, just 
+                <span class="contact-link">
+                    <a href="https://www.facebook.com/profile.php?id=100025354545722" target="_blank">
+                        get in touch.
+                    </a>
+                </span>
+            </p>
+            <div class="contact_container-link" data-scroll="">
+                <a href="#"target="_blank" data-scroll="">Behance</a>
+                <br>
+                <a href="#"target="_blank" data-scroll="">Twitter</a>
+                <br>
+                <a href="#"target="_blank" data-scroll="">Instagram</a>.
+            </div>
+        </div>
+
+        
+    </div>
+    </div>
+
+<!-- -------------------script-------------------  -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!-- -------------------script-------------------  --> 
+<script>
+scroll = new LocomotiveScroll({
+    el: document.querySelector('#js-scroll'),
+    smooth: true,
+    smoothMobile: true,
+    inertia: 0.75
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Readex Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* html */
+
+/* style */
+.banner {
+    background: url(../img/dust.gif);
+}
+.portfolio_container {
+    width: 70%;
+    margin: 100px auto;
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.portfolio-title h1{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 140px;
+}
+
+.portfolio-subtitle {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.portfolio-img {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+}
+
+.p-image {
+    background: red;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.image-one {
+    background: url(../img/nasa-jlV2k_Fx0fc-unsplash.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.image-two {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(../img/img03.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.image-three {
+    position: relative;
+    left: 300px;
+    background: url(../img/img04.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.image-four {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(../img/img05.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.contact-next-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-next-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 160px;
+    transition: .4s;
+}
+
+.contact-next-link a:hover{
+    text-decoration: none;
+    color: white;
+    padding-left: 60px;
+}
+
+.anime-js-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+@media(max-width: 415px) {
+    .portfolio-title h1 {
+        font-size: 30px;
+    }
+
+    .portfolio_container {
+        width: 100%;
+    }
+
+    .portfolio-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .p-image {
+        width: 100%;
+    }
+    .contact-next-link a{
+        font-size: 30px;
+    }
+
+    .image-one, .image-two, .image-three, .image-four {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
